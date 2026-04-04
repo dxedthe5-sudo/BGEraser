@@ -1,9 +1,8 @@
 [build]
-  # If package.json is in a subfolder, uncomment and set it:
-  # base = "your-subfolder-name"
-  
-  # Remove or change this if you don't need a build step
-  command = ""
-  
-  # Set to your published folder (usually . or dist)
-  publish = "."
+  command = "npm run build"
+  publish = "build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
